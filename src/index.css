@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+  font-size: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0f172a; /* slate-900 */
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Swiper nav/pagination on dark theme */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0ea5e9;
+}
+.swiper-pagination-bullet {
+  background: #64748b;
+}
+.swiper-pagination-bullet-active {
+  background: #0ea5e9;
+}
