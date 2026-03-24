@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaEnvelope, FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin, FaFacebook, FaPhone } from 'react-icons/fa'
 import { useLanguage } from '../../hooks/useLanguage.js'
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mkovebnv'
@@ -11,6 +11,7 @@ function Contact() {
   const [errorMessage, setErrorMessage] = useState('')
 
   const email = 'rey.mac93@outlook.com'
+  const phone = '+63 999 521 5400'
   const linkedin = 'https://ph.linkedin.com/in/reymac93'
   const github = 'https://github.com/Reymac93'
   const facebook = 'https://www.facebook.com/share/18RwwtCe1e/?mibextid=wwXIfr'
@@ -108,6 +109,13 @@ function Contact() {
             <FaEnvelope className="h-4 w-4 shrink-0 text-sky-400" />
             <a href={`mailto:${email}`} className="hover:text-sky-300 hover:underline">
               {email}
+            </a>
+          </div>
+
+          <div className="flex items-center gap-2 text-sm text-white/90">
+            <FaPhone className="h-4 w-4 shrink-0 text-sky-400" />
+            <a className="hover:text-sky-300 hover:underline">
+              {phone}
             </a>
           </div>
         </div>
