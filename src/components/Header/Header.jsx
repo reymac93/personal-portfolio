@@ -19,14 +19,14 @@ function Header() {
           <a href="#hero" className="hover:text-sky-400">
             {t('nav_about_me')}
           </a>
+          <a href="#projects" className="hover:text-sky-400">
+            {t('nav_portfolio')}
+          </a>
           <a href="#skills" className="hover:text-sky-400">
             {t('nav_skills')}
           </a>
-          <a href="#services" className="hover:text-sky-400">
+          <a href="#build" className="hover:text-sky-400">
             {t('nav_services')}
-          </a>
-          <a href="#portfolio" className="hover:text-sky-400">
-            {t('nav_portfolio')}
           </a>
           <a href="#contact" className="hover:text-sky-400">
             {t('nav_contact')}

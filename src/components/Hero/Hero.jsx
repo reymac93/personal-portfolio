@@ -1,74 +1,73 @@
-import { createElement } from 'react'
 import { useLanguage } from '../../hooks/useLanguage.js'
-import { FaReact, FaNodeJs, FaVuejs, FaPython, FaDocker, FaPhp } from 'react-icons/fa'
-import { SiJavascript, SiMysql, SiAmazonwebservices, SiPostgresql, SiMongodb } from 'react-icons/si'
-
-const heroTechStack = [
-  { name: 'JavaScript', icon: SiJavascript },
-  { name: 'React', icon: FaReact },
-  { name: 'Node.js', icon: FaNodeJs },
-  { name: 'Python', icon: FaPython },
-  { name: 'PostgreSQL', icon: SiPostgresql },
-  { name: 'MySQL', icon: SiMysql },
-  { name: 'MongoDB', icon: SiMongodb },
-  { name: 'Docker', icon: FaDocker },
-  { name: 'AWS', icon: SiAmazonwebservices },
-]
 
 function Hero() {
   const { t } = useLanguage()
 
   return (
-    <div className="grid gap-10 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:items-center">
-      <div className="space-y-5">
-        <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
-          {t('hero_name')}
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.4fr)] lg:items-center">
+      <div className="space-y-6">
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
+          {t('hero_intro')}
+        </p>
+        <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl leading-tight">
+          {t('hero_headline')}
         </h1>
-        <p className="text-lg font-medium text-sky-400 sm:text-xl">{t('hero_title')}</p>
-        <p className="text-sm text-slate-400">{t('hero_location')}</p>
-        {t('hero_about_short')
-          .split('\n\n')
-          .map((paragraph, idx) => (
-            <p
-              key={idx}
-              className="text-sm text-slate-300 text-justify sm:text-base"
-            >
-              {paragraph}
-            </p>
-          ))}
+        <p className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+          {t('hero_subheadline')}
+        </p>
+        <p className="text-sm text-slate-400">{t('hero_small_line')}</p>
 
-        <div className="flex flex-wrap items-center gap-4 pt-2">
+        <div className="flex flex-wrap gap-3">
           <a
-            href="#portfolio"
-            className="inline-flex items-center gap-2 rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-sky-500/30 transition hover:-translate-y-0.5 hover:bg-sky-400 sm:text-base"
+            href="#projects"
+            className="inline-flex items-center justify-center rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-400"
           >
-            {t('hero_cta_view_portfolio')}
-            <span aria-hidden="true">↗</span>
+            {t('hero_cta_projects')}
+          </a>
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-800 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-sky-500 hover:text-white"
+          >
+            {t('hero_cta_contact')}
           </a>
         </div>
       </div>
 
-      <div className="relative hidden md:block">
-        <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-sky-500/20 via-sky-400/10 to-transparent blur-3xl" />
-        <div className="relative rounded-3xl border border-slate-700 bg-slate-800 p-6 shadow-xl">
-          <p className="mb-6 text-center text-xs font-semibold uppercase tracking-widest text-slate-400">
-            Tech stack
-          </p>
-          <div className="grid grid-cols-3 gap-4">
-            {heroTechStack.map(({ name, icon: Icon }) => (
-              <div
-                key={name}
-                className="group flex flex-col items-center gap-3 rounded-xl border-2 border-slate-700 bg-slate-800/50 px-3 py-5 transition-all hover:border-sky-500/60 hover:bg-slate-800 hover:shadow-lg hover:shadow-sky-500/10"
-                title={name}
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-sky-500/20 text-sky-400 group-hover:bg-sky-500/30 transition-colors">
-                  {createElement(Icon, { className: 'h-7 w-7', 'aria-hidden': true })}
-                </div>
-                <span className="text-center text-xs font-semibold text-slate-200">
-                  {name}
-                </span>
-              </div>
-            ))}
+      <div className="relative hidden overflow-hidden rounded-[2rem] border border-slate-700 bg-slate-900/80 p-6 shadow-2xl shadow-sky-500/10 lg:block">
+        <div className="absolute -left-8 top-8 h-24 w-24 rounded-full bg-sky-500/10 blur-3xl" />
+        <div className="absolute -right-10 bottom-6 h-28 w-28 rounded-full bg-purple-500/10 blur-3xl" />
+        <div className="relative rounded-[2rem] border border-slate-700 bg-slate-950/90 p-6">
+          <div className="mb-6 flex items-center justify-between">
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">live system</p>
+              <p className="mt-2 text-base font-semibold text-white">Production architecture</p>
+            </div>
+            <span className="inline-flex h-3.5 w-3.5 rounded-full bg-emerald-400" />
+          </div>
+
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/90 p-5">
+            <div className="mb-4 flex items-center justify-between text-xs uppercase tracking-[0.3em] text-slate-500">
+              <span>service.js</span>
+              <span>Node.js</span>
+            </div>
+            <div className="space-y-2 text-sm font-medium leading-7 text-slate-300">
+              <p className="text-sky-300">async function processJob() {'{'}</p>
+              <p className="pl-4">const task = await queue.getNext()</p>
+              <p className="pl-4">await worker.run(task)</p>
+              <p className="pl-4">task.complete()</p>
+              <p>{'}'}</p>
+            </div>
+          </div>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-3xl bg-slate-900/80 p-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Latency</p>
+              <p className="mt-3 text-2xl font-semibold text-white">120ms</p>
+            </div>
+            <div className="rounded-3xl bg-slate-900/80 p-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Throughput</p>
+              <p className="mt-3 text-2xl font-semibold text-white">12k req/min</p>
+            </div>
           </div>
         </div>
       </div>

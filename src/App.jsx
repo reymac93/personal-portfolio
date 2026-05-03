@@ -1,9 +1,13 @@
 import Header from './components/Header/Header.jsx'
 import Hero from './components/Hero/Hero.jsx'
+import FeaturedProjects from './components/FeaturedProjects/FeaturedProjects.jsx'
 import Skills from './components/Skills/Skills.jsx'
 import Services from './components/Services/Services.jsx'
-import PortfolioSlider from './components/Portfolio/PortfolioSlider.jsx'
-import Contact from './components/Contact/Contact.jsx';
+import SelectedSystems from './components/SelectedSystems/SelectedSystems.jsx'
+import MoreProjects from './components/MoreProjects/MoreProjects.jsx'
+import Proof from './components/Proof/Proof.jsx'
+import FinalCTA from './components/FinalCTA/FinalCTA.jsx'
+import Contact from './components/Contact/Contact.jsx'
 
 function App() {
   return (
@@ -17,12 +21,7 @@ function App() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Dark overlay for readability */}
-      <div
-        className="pointer-events-none fixed inset-0 z-0 bg-slate-900/80"
-        aria-hidden
-      />
-      {/* Dotted pattern (same as Contact section) */}
+      <div className="pointer-events-none fixed inset-0 z-0 bg-slate-900/80" aria-hidden />
       <div
         className="pointer-events-none fixed inset-0 z-0 opacity-30"
         style={{
@@ -41,16 +40,32 @@ function App() {
           <Hero />
         </section>
 
+        <section id="projects" className="scroll-mt-24">
+          <FeaturedProjects />
+        </section>
+
         <section id="skills" className="scroll-mt-24">
           <Skills />
         </section>
 
-        <section id="services" className="scroll-mt-24">
+        <section id="build" className="scroll-mt-24">
           <Services />
         </section>
 
-        <section id="portfolio" className="scroll-mt-24">
-          <PortfolioSlider />
+        <section id="systems" className="scroll-mt-24">
+          <SelectedSystems />
+        </section>
+
+        <section id="more-projects" className="scroll-mt-24">
+          <MoreProjects />
+        </section>
+
+        <section id="proof" className="scroll-mt-24">
+          <Proof />
+        </section>
+
+        <section id="final-cta" className="scroll-mt-24">
+          <FinalCTA />
         </section>
 
         <section id="contact" className="scroll-mt-24">

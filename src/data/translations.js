@@ -2,15 +2,22 @@ export const translations = {
   en: {
     // Header / navigation
     nav_about_me: 'About Me',
-    nav_skills: 'My Skills',
-    nav_services: 'Engineering Highlights',
-    nav_portfolio: 'Portfolio',
+    nav_skills: 'Skills',
+    nav_services: 'How I Build',
+    nav_portfolio: 'Projects',
     nav_contact: 'Contact',
     lang_en: 'EN',
     lang_es: 'ES',
 
     // Hero
     hero_name: 'Reynan Guinto Macasaquit',
+    hero_intro: 'Senior Full Stack & AI Engineer',
+    hero_headline: 'I build scalable AI-powered systems for real-world applications.',
+    hero_subheadline:
+      'Senior Full Stack & AI Engineer specializing in high-performance APIs, distributed systems, and machine learning integration.',
+    hero_small_line: 'Focused on performance, scalability, and production-ready solutions.',
+    hero_cta_projects: 'View Projects',
+    hero_cta_contact: 'Contact Me',
     hero_title: 'Senior Full Stack Developer',
     hero_location: '',
     hero_subtitle:
@@ -24,7 +31,7 @@ export const translations = {
 
     // Sections
     section_skills_title: 'My Skills',
-    section_services_title: 'Engineering Highlights',
+    section_services_title: 'How I Build Scalable Systems',
     section_portfolio_title: 'Portfolio',
     section_contact_title: 'Contact',
 
@@ -35,22 +42,22 @@ export const translations = {
     skills_tab_databases: 'Databases',
     skills_tab_system_tools: 'System & Tools',
     skills_tab_cloud_deployment: 'Cloud & Deployment',
-    skills_subtitle: 'Technical Expertise',
+    skills_subtitle: 'I design systems with performance, scalability, and maintainability in mind.',
 
     // Services
-    services_web_dev_title: 'Scalable Backend Systems',
+    services_web_dev_title: 'Design APIs for performance and low latency',
     services_web_dev_desc:
-      'Designed scalable backend systems handling asynchronous and real-time workloads.',
-    services_api_title: 'API Performance Optimization',
+      'Build modular and maintainable architectures that scale with real-world traffic.',
+    services_api_title: 'Optimize for scalability',
     services_api_desc:
-      'Optimized API performance through caching and efficient database queries.',
-    services_devops_title: 'Maintainable Full-Stack Applications',
+      'Ensure every endpoint supports high concurrency and stable growth.',
+    services_devops_title: 'Monitor and validate reliability',
     services_devops_desc:
-      'Built maintainable full-stack applications with clean architecture.',
-    services_ai_ml_title: 'System Reliability',
+      'Use proper testing, monitoring, and fault-tolerant patterns for production systems.',
+    services_ai_ml_title: 'Architect for real workloads',
     services_ai_ml_desc:
-      'Improved system reliability through fault-tolerant design patterns.',
-    services_subtitle: 'Key achievements and expertise in building robust systems.',
+      'Deploy ML and data pipelines that are production-ready and easy to operate.',
+    services_subtitle: 'A senior engineering approach for reliable systems and growth-ready software.',
 
     // Portfolio
     portfolio_subtitle: 'Recent projects that highlight my experience across the full stack.',
@@ -78,15 +85,22 @@ export const translations = {
   es: {
     // Header / navigation
     nav_about_me: 'Acerca de mí',
-    nav_skills: 'Mis Habilidades',
-    nav_services: 'Aspectos Destacados de Ingeniería',
-    nav_portfolio: 'Portafolio',
+    nav_skills: 'Habilidades',
+    nav_services: 'Cómo Construyo',
+    nav_portfolio: 'Proyectos',
     nav_contact: 'Contacto',
     lang_en: 'EN',
     lang_es: 'ES',
 
     // Hero
     hero_name: 'Reyn Macasaquit',
+    hero_intro: 'Desarrollador Full Stack e IA Senior',
+    hero_headline: 'Construyo sistemas escalables impulsados por IA para aplicaciones del mundo real.',
+    hero_subheadline:
+      'Desarrollador Full Stack e IA Senior especializado en APIs de alto rendimiento, sistemas distribuidos e integración de machine learning.',
+    hero_small_line: 'Enfocado en rendimiento, escalabilidad y soluciones listas para producción.',
+    hero_cta_projects: 'Ver Proyectos',
+    hero_cta_contact: 'Contáctame',
     hero_title: 'Desarrollador Full Stack Senior',
     hero_location: '',
     hero_subtitle:
@@ -100,7 +114,7 @@ export const translations = {
 
     // Sections
     section_skills_title: 'Mis Habilidades',
-    section_services_title: 'Aspectos Destacados de Ingeniería',
+    section_services_title: 'Cómo Construyo Sistemas Escalables',
     section_portfolio_title: 'Portafolio',
     section_contact_title: 'Contacto',
 
@@ -111,22 +125,22 @@ export const translations = {
     skills_tab_databases: 'Bases de Datos',
     skills_tab_system_tools: 'Sistema y Herramientas',
     skills_tab_cloud_deployment: 'Nube y Despliegue',
-    skills_subtitle: 'Experiencia Técnica',
+    skills_subtitle: 'Diseño sistemas con rendimiento, escalabilidad y mantenibilidad en mente.',
 
     // Services
-    services_web_dev_title: 'Sistemas Backend Escalables',
+    services_web_dev_title: 'Diseño APIs para rendimiento y baja latencia',
     services_web_dev_desc:
-      'Diseñé sistemas backend escalables que manejan cargas de trabajo asíncronas y en tiempo real.',
-    services_api_title: 'Optimización del Rendimiento de API',
+      'Construyo arquitecturas modulares y mantenibles que escalan con el tráfico real.',
+    services_api_title: 'Optimizo para escalabilidad',
     services_api_desc:
-      'Optimizé el rendimiento de API mediante almacenamiento en caché y consultas eficientes de bases de datos.',
-    services_devops_title: 'Aplicaciones Full-Stack Mantenibles',
+      'Aseguro que cada endpoint soporte alta concurrencia y crecimiento estable.',
+    services_devops_title: 'Monitoreo y validación de confiabilidad',
     services_devops_desc:
-      'Construí aplicaciones full-stack mantenibles con arquitectura limpia.',
-    services_ai_ml_title: 'Confiabilidad del Sistema',
+      'Uso pruebas, monitoreo y patrones tolerantes a fallos para sistemas productivos.',
+    services_ai_ml_title: 'Arquitectura para cargas reales',
     services_ai_ml_desc:
-      'Mejoré la confiabilidad del sistema mediante patrones de diseño tolerantes a fallos.',
-    services_subtitle: 'Logros clave y experiencia en la construcción de sistemas robustos.',
+      'Despliego pipelines de ML que son listos para producción y fáciles de operar.',
+    services_subtitle: 'Un enfoque senior para sistemas confiables y software preparado para crecer.',
 
     // Portfolio
     portfolio_subtitle: 'Proyectos recientes que destacan mi experiencia full stack.',
