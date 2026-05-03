@@ -12,7 +12,7 @@ function Contact() {
 
   const email = 'rey.mac93@outlook.com'
   const phone = '+63 999 521 5400'
-  const linkedin = 'https://ph.linkedin.com/in/reymac93'
+  const linkedin = 'https://www.linkedin.com/in/reymac93'
   const github = 'https://github.com/Reymac93'
   const facebook = 'https://www.facebook.com/share/18RwwtCe1e/?mibextid=wwXIfr'
 

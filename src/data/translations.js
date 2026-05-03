@@ -3,7 +3,7 @@ export const translations = {
     // Header / navigation
     nav_about_me: 'About Me',
     nav_skills: 'My Skills',
-    nav_services: 'Services',
+    nav_services: 'Engineering Highlights',
     nav_portfolio: 'Portfolio',
     nav_contact: 'Contact',
     lang_en: 'EN',
@@ -12,11 +12,11 @@ export const translations = {
     // Hero
     hero_name: 'Reynan Guinto Macasaquit',
     hero_title: 'Senior Full Stack Developer',
-    hero_location: 'Remote · Philippines',
+    hero_location: '',
     hero_subtitle:
-      'Senior Full Stack Developer (11+ years) building scalable, production-ready web applications.',
+      'I design and build scalable, production-grade web applications with a strong focus on backend systems, API performance, and system reliability.',
     hero_about_short:
-      'Senior Full Stack Developer with over 11 years of experience designing, architecting, and delivering scalable web applications from concept to production. Extensive expertise in building modern, component-driven front-end applications using React, Angular, and Vue, with strong emphasis on performance optimization, accessibility, and responsive design.\n\nOn the backend, experienced in developing secure and high-performing systems using Node.js (Express/NestJS), Laravel, and FastAPI. Skilled in RESTful API design, authentication and authorization (JWT, OAuth), microservices architecture, and real-time systems. Strong understanding of relational and NoSQL databases including MySQL, PostgreSQL, and MongoDB, with hands-on experience in query optimization, indexing strategies, and schema design.\n\nProficient in cloud infrastructure and DevOps practices using AWS and Azure, including containerization with Docker, CI/CD pipeline implementation, automated deployments, and infrastructure scaling.\n\nPassionate about solving complex technical challenges, improving system performance, and delivering reliable digital products that create measurable business impact.',
+      'I\'m a Senior Full Stack Developer with a strong focus on backend engineering and system design. I specialize in building scalable applications, optimizing performance, and designing systems that remain reliable in production environments.\n\nMy experience includes developing APIs, designing efficient database schemas, and integrating modern frontend technologies to deliver complete, high-quality solutions. I prioritize clean, maintainable code and make architectural decisions that support long-term scalability.\n\nI enjoy solving complex technical challenges, improving system efficiency, and building applications that deliver real-world impact.',
     hero_read_more: 'Read more',
     hero_cta_view_portfolio: 'View my work',
     hero_resume_download: 'Download Resume',
@@ -24,32 +24,33 @@ export const translations = {
 
     // Sections
     section_skills_title: 'My Skills',
-    section_services_title: 'Services',
+    section_services_title: 'Engineering Highlights',
     section_portfolio_title: 'Portfolio',
     section_contact_title: 'Contact',
 
     // Skills tabs
     skills_tab_all: 'All',
     skills_tab_frontend: 'Frontend',
-    skills_tab_backend: 'Backend',
+    skills_tab_backend: 'Backend & APIs',
     skills_tab_databases: 'Databases',
-    skills_tab_devops: 'Cloud & DevOps',
+    skills_tab_system_tools: 'System & Tools',
+    skills_tab_cloud_deployment: 'Cloud & Deployment',
     skills_subtitle: 'Technical Expertise',
 
     // Services
-    services_web_dev_title: 'Web Application Development',
+    services_web_dev_title: 'Scalable Backend Systems',
     services_web_dev_desc:
-      'End‑to‑end development of responsive, performant web applications using modern JavaScript frameworks and best practices.',
-    services_api_title: 'API Design & Integration',
+      'Designed scalable backend systems handling asynchronous and real-time workloads.',
+    services_api_title: 'API Performance Optimization',
     services_api_desc:
-      'RESTful and GraphQL APIs, integrations with third‑party services, and robust backend architectures.',
-    services_devops_title: 'DevOps & Cloud Solutions',
+      'Optimized API performance through caching and efficient database queries.',
+    services_devops_title: 'Maintainable Full-Stack Applications',
     services_devops_desc:
-      'CI/CD pipelines, containerization, and cloud infrastructure to ensure reliability and scalability.',
-    services_ai_ml_title: 'AI/ML',
+      'Built maintainable full-stack applications with clean architecture.',
+    services_ai_ml_title: 'System Reliability',
     services_ai_ml_desc:
-      'Custom ML models, LLM integration, and AI-powered features to enhance your products and workflows.',
-    services_subtitle: 'From frontend experiences to backend APIs and DevOps, I help ship production‑ready solutions.',
+      'Improved system reliability through fault-tolerant design patterns.',
+    services_subtitle: 'Key achievements and expertise in building robust systems.',
 
     // Portfolio
     portfolio_subtitle: 'Recent projects that highlight my experience across the full stack.',
@@ -78,20 +79,20 @@ export const translations = {
     // Header / navigation
     nav_about_me: 'Acerca de mí',
     nav_skills: 'Mis Habilidades',
-    nav_services: 'Servicios',
+    nav_services: 'Aspectos Destacados de Ingeniería',
     nav_portfolio: 'Portafolio',
     nav_contact: 'Contacto',
     lang_en: 'EN',
     lang_es: 'ES',
 
     // Hero
-    hero_name: 'Reynan Guinto Macasaquit',
+    hero_name: 'Reyn Macasaquit',
     hero_title: 'Desarrollador Full Stack Senior',
-    hero_location: 'Remoto · Latinoamérica',
+    hero_location: '',
     hero_subtitle:
-      'Desarrollador Full Stack Senior (11+ años) creando aplicaciones web escalables y listas para producción.',
+      'Diseño y construyo aplicaciones web escalables y listas para producción con un fuerte enfoque en sistemas backend, rendimiento de API y confiabilidad del sistema.',
     hero_about_short:
-      'Desarrollador Full Stack Senior con más de 11 años de experiencia diseñando, arquitectando y entregando aplicaciones web escalables desde el concepto hasta producción. Amplia experiencia construyendo interfaces frontend modernas basadas en componentes con React, Angular y Vue, con fuerte énfasis en optimización de rendimiento, accesibilidad y diseño responsivo.\n\nEn el backend, experiencia desarrollando sistemas seguros y de alto rendimiento usando Node.js (Express/NestJS), Laravel y FastAPI. Especializado en diseño de APIs REST, autenticación y autorización (JWT, OAuth), arquitectura de microservicios y sistemas en tiempo real. Sólidos conocimientos en bases de datos relacionales y NoSQL, incluyendo MySQL, PostgreSQL y MongoDB, con experiencia práctica en optimización de consultas, estrategias de indexación y diseño de esquemas.\n\nDominio de infraestructura en la nube y prácticas DevOps con AWS y Azure, incluyendo contenedorización con Docker, implementación de pipelines de CI/CD, despliegues automatizados y escalado de infraestructura.\n\nApasionado por resolver retos técnicos complejos, mejorar el rendimiento de los sistemas y entregar productos digitales confiables que generen impacto medible en el negocio.',
+      'Soy un Desarrollador Full Stack Senior con un fuerte enfoque en ingeniería backend y diseño de sistemas. Me especializo en construir aplicaciones escalables, optimizando el rendimiento y diseñando sistemas que permanecen confiables en entornos de producción.\n\nMi experiencia incluye desarrollar APIs, diseñar esquemas de bases de datos eficientes e integrar tecnologías frontend modernas para entregar soluciones completas y de alta calidad. Priorizo código limpio y mantenible y tomo decisiones arquitectónicas que apoyan la escalabilidad a largo plazo.\n\nDisfruto resolviendo desafíos técnicos complejos, mejorando la eficiencia del sistema y construyendo aplicaciones que generan impacto real.',
     hero_read_more: 'Leer más',
     hero_cta_view_portfolio: 'Ver mi trabajo',
     hero_resume_download: 'Descargar currículum',
@@ -99,32 +100,33 @@ export const translations = {
 
     // Sections
     section_skills_title: 'Mis Habilidades',
-    section_services_title: 'Servicios',
+    section_services_title: 'Aspectos Destacados de Ingeniería',
     section_portfolio_title: 'Portafolio',
     section_contact_title: 'Contacto',
 
     // Skills tabs
     skills_tab_all: 'Todas',
     skills_tab_frontend: 'Frontend',
-    skills_tab_backend: 'Backend',
+    skills_tab_backend: 'Backend y APIs',
     skills_tab_databases: 'Bases de Datos',
-    skills_tab_devops: 'Cloud y DevOps',
+    skills_tab_system_tools: 'Sistema y Herramientas',
+    skills_tab_cloud_deployment: 'Nube y Despliegue',
     skills_subtitle: 'Experiencia Técnica',
 
     // Services
-    services_web_dev_title: 'Desarrollo de Aplicaciones Web',
+    services_web_dev_title: 'Sistemas Backend Escalables',
     services_web_dev_desc:
-      'Desarrollo completo de aplicaciones web responsivas y de alto rendimiento usando frameworks modernos de JavaScript.',
-    services_api_title: 'Diseño e Integración de APIs',
+      'Diseñé sistemas backend escalables que manejan cargas de trabajo asíncronas y en tiempo real.',
+    services_api_title: 'Optimización del Rendimiento de API',
     services_api_desc:
-      'APIs REST y GraphQL, integraciones con servicios de terceros y arquitecturas backend robustas.',
-    services_devops_title: 'Soluciones DevOps y Cloud',
+      'Optimizé el rendimiento de API mediante almacenamiento en caché y consultas eficientes de bases de datos.',
+    services_devops_title: 'Aplicaciones Full-Stack Mantenibles',
     services_devops_desc:
-      'Pipelines de CI/CD, contenedorización e infraestructura en la nube para garantizar fiabilidad y escalabilidad.',
-    services_ai_ml_title: 'IA/ML',
+      'Construí aplicaciones full-stack mantenibles con arquitectura limpia.',
+    services_ai_ml_title: 'Confiabilidad del Sistema',
     services_ai_ml_desc:
-      'Modelos de ML a medida, integración con LLMs y funcionalidades impulsadas por IA para tus productos y flujos de trabajo.',
-    services_subtitle: 'Desde experiencias frontend hasta APIs backend y DevOps, ayudo a enviar soluciones listas para producción.',
+      'Mejoré la confiabilidad del sistema mediante patrones de diseño tolerantes a fallos.',
+    services_subtitle: 'Logros clave y experiencia en la construcción de sistemas robustos.',
 
     // Portfolio
     portfolio_subtitle: 'Proyectos recientes que destacan mi experiencia full stack.',

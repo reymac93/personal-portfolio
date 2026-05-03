@@ -29,50 +29,52 @@ import {
   SiDocker,
   SiAmazonwebservices,
   SiGithubactions,
-  SiGo
+  SiGo,
+  SiVercel,
+  SiNetlify
 } from 'react-icons/si'
 
-const tabs = ['all', 'frontend', 'backend', 'databases', 'devops']
+const tabs = ['all', 'frontend', 'backend-apis', 'databases', 'system-tools', 'cloud-deployment']
 
 const techByTab = {
   frontend: [
-    { name: 'HTML5 / CSS3', icon: SiHtml5, level: 'Advanced', score: 92 },
+    { name: 'HTML5', icon: SiHtml5, level: 'Advanced', score: 90 },
+    { name: 'CSS3', icon: SiSass, level: 'Advanced', score: 88 },
     { name: 'JavaScript', icon: SiJavascript, level: 'Expert', score: 95 },
-    { name: 'TypeScript', icon: SiTypescript, level: 'Advanced', score: 90 },
     { name: 'React', icon: FaReact, level: 'Expert', score: 95 },
-    { name: 'Angular', icon: FaAngular, level: 'Intermediate', score: 80 },
-    { name: 'Vue', icon: SiVuedotjs, level: 'Intermediate', score: 78 },
-    { name: 'SCSS / SASS', icon: SiSass, level: 'Advanced', score: 88 },
-    { name: 'Tailwind CSS', icon: SiTailwindcss, level: 'Advanced', score: 90 },
-    { name: 'Material-UI', icon: SiMui, level: 'Advanced', score: 85 },
-    { name: 'Bootstrap', icon: SiBootstrap, level: 'Advanced', score: 88 },
   ],
-  backend: [
-    { name: 'PHP', icon: FaPhp, level: 'Expert', score: 93 },
-    { name: 'Python', icon: FaPython, level: 'Advanced', score: 88 },
+  'backend-apis': [
     { name: 'Node.js', icon: FaNodeJs, level: 'Expert', score: 92 },
-    { name: 'Golang', icon: SiGo, level: 'Expert', score: 90 },
+    { name: 'Python', icon: FaPython, level: 'Advanced', score: 88 },
+    { name: 'FastAPI', icon: SiFastapi, level: 'Advanced', score: 85 },
+    { name: 'Django', icon: SiLaravel, level: 'Intermediate', score: 80 },
   ],
   databases: [
-    { name: 'MySQL', icon: SiMysql, level: 'Expert', score: 92 },
     { name: 'PostgreSQL', icon: SiPostgresql, level: 'Advanced', score: 88 },
+    { name: 'MySQL', icon: SiMysql, level: 'Expert', score: 92 },
     { name: 'MongoDB', icon: SiMongodb, level: 'Advanced', score: 86 },
-    { name: 'Redis', icon: SiRedis, level: 'Intermediate', score: 82 },
   ],
-  devops: [
+  'system-tools': [
+    { name: 'Redis', icon: SiRedis, level: 'Intermediate', score: 82 },
     { name: 'Docker', icon: SiDocker, level: 'Advanced', score: 88 },
+    { name: 'Git', icon: FaLaptopCode, level: 'Expert', score: 95 },
+    { name: 'CI/CD', icon: SiGithubactions, level: 'Advanced', score: 84 },
+  ],
+  'cloud-deployment': [
     { name: 'AWS', icon: SiAmazonwebservices, level: 'Advanced', score: 86 },
-    { name: 'GitHub Actions', icon: SiGithubactions, level: 'Advanced', score: 84 },
     { name: 'Azure', icon: FaCloud, level: 'Intermediate', score: 80 },
+    { name: 'Netlify', icon: SiNetlify, level: 'Intermediate', score: 78 },
+    { name: 'Vercel', icon: SiVercel, level: 'Intermediate', score: 78 },
   ],
 }
 
 const tabIcons = {
   all: FaLaptopCode,
   frontend: FaLaptopCode,
-  backend: FaServer,
+  'backend-apis': FaServer,
   databases: FaDatabase,
-  devops: FaCloud,
+  'system-tools': FaLaptopCode,
+  'cloud-deployment': FaCloud,
 }
 
 const allTechIcons = Object.values(techByTab).flat()
@@ -88,12 +90,14 @@ function Skills() {
         return t('skills_tab_all')
       case 'frontend':
         return t('skills_tab_frontend')
-      case 'backend':
+      case 'backend-apis':
         return t('skills_tab_backend')
       case 'databases':
         return t('skills_tab_databases')
-      case 'devops':
-        return t('skills_tab_devops')
+      case 'system-tools':
+        return t('skills_tab_system_tools')
+      case 'cloud-deployment':
+        return t('skills_tab_cloud_deployment')
       default:
         return key
     }

@@ -1,11 +1,7 @@
 import { useLanguage } from '../../hooks/useLanguage.js'
 
 function Header() {
-  const { language, setLanguage, t } = useLanguage()
-
-  const handleLanguageChange = (lang) => {
-    setLanguage(lang)
-  }
+  const { t } = useLanguage()
 
   return (
     <header className="fixed inset-x-0 top-0 z-20 border-b border-slate-700 bg-slate-900/95 backdrop-blur">

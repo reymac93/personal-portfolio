@@ -1,41 +1,16 @@
 import { createElement } from 'react'
 import { useLanguage } from '../../hooks/useLanguage.js'
 import { FaReact, FaNodeJs, FaVuejs, FaPython, FaDocker, FaPhp } from 'react-icons/fa'
-import { SiJavascript, SiMysql, SiAmazonwebservices } from 'react-icons/si'
-
-// Tech-related terms to bold in the summary (longer phrases first for regex)
-const TECH_TERMS = [
-  'Node.js', 'Express/NestJS', 'FastAPI', 'RESTful', 'GraphQL', 'NoSQL',
-  'PostgreSQL', 'MongoDB', 'microservices', 'containerization', 'performance optimization',
-  'responsive design', 'React', 'Angular', 'Vue', 'Express', 'NestJS', 'Laravel',
-  'JWT', 'OAuth', 'MySQL', 'DevOps', 'CI/CD', 'AWS', 'Azure', 'Docker',
-  'JavaScript', 'TypeScript', 'API', 'front-end', 'backend', 'full stack',
-]
-
-function boldTechWords(text) {
-  const escaped = TECH_TERMS.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
-  const sorted = escaped.sort((a, b) => b.length - a.length)
-  const regex = new RegExp(`(${sorted.join('|')})`, 'gi')
-  const parts = text.split(regex)
-  return parts.map((part, i) =>
-    TECH_TERMS.some((term) => term.toLowerCase() === part.toLowerCase()) ? (
-      <strong key={i} className="font-bold text-slate-200">
-        {part}
-      </strong>
-    ) : (
-      part
-    )
-  )
-}
+import { SiJavascript, SiMysql, SiAmazonwebservices, SiPostgresql, SiMongodb } from 'react-icons/si'
 
 const heroTechStack = [
   { name: 'JavaScript', icon: SiJavascript },
   { name: 'React', icon: FaReact },
-  { name: 'Vue', icon: FaVuejs },
   { name: 'Node.js', icon: FaNodeJs },
-  { name: 'PHP', icon: FaPhp },
   { name: 'Python', icon: FaPython },
+  { name: 'PostgreSQL', icon: SiPostgresql },
   { name: 'MySQL', icon: SiMysql },
+  { name: 'MongoDB', icon: SiMongodb },
   { name: 'Docker', icon: FaDocker },
   { name: 'AWS', icon: SiAmazonwebservices },
 ]
@@ -58,7 +33,7 @@ function Hero() {
               key={idx}
               className="text-sm text-slate-300 text-justify sm:text-base"
             >
-              {boldTechWords(paragraph)}
+              {paragraph}
             </p>
           ))}
 
