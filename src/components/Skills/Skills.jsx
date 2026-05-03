@@ -32,7 +32,7 @@ import {
   SiGo
 } from 'react-icons/si'
 
-const tabs = ['frontend', 'backend', 'databases', 'devops']
+const tabs = ['all', 'frontend', 'backend', 'databases', 'devops']
 
 const techByTab = {
   frontend: [
@@ -68,6 +68,7 @@ const techByTab = {
 }
 
 const tabIcons = {
+  all: FaLaptopCode,
   frontend: FaLaptopCode,
   backend: FaServer,
   databases: FaDatabase,
@@ -75,6 +76,7 @@ const tabIcons = {
 }
 
 const allTechIcons = Object.values(techByTab).flat()
+const techByTabWithAll = { all: allTechIcons, ...techByTab }
 
 function Skills() {
   const { t } = useLanguage()
@@ -82,6 +84,8 @@ function Skills() {
 
   const getTabLabel = (key) => {
     switch (key) {
+      case 'all':
+        return t('skills_tab_all')
       case 'frontend':
         return t('skills_tab_frontend')
       case 'backend':
@@ -145,7 +149,7 @@ function Skills() {
         aria-labelledby={`tab-${activeTab}`} 
       >
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 md:grid-cols-4 lg:grid-cols-5">
-          {techByTab[activeTab].map(({ name, icon: Icon, score }) => (
+          {techByTabWithAll[activeTab].map(({ name, icon: Icon, score }) => (
             <div
               key={name}
               className="group flex cursor-default flex-col items-center gap-3 rounded-xl border-2 border-slate-700 bg-slate-800/50 px-4 py-5 transition-all hover:border-sky-500/60 hover:bg-slate-800 hover:shadow-lg hover:shadow-sky-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/60"

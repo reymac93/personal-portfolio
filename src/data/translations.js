@@ -29,6 +29,7 @@ export const translations = {
     section_contact_title: 'Contact',
 
     // Skills tabs
+    skills_tab_all: 'All',
     skills_tab_frontend: 'Frontend',
     skills_tab_backend: 'Backend',
     skills_tab_databases: 'Databases',
@@ -103,6 +104,7 @@ export const translations = {
     section_contact_title: 'Contacto',
 
     // Skills tabs
+    skills_tab_all: 'Todas',
     skills_tab_frontend: 'Frontend',
     skills_tab_backend: 'Backend',
     skills_tab_databases: 'Bases de Datos',
