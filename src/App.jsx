@@ -3,7 +3,7 @@ import Hero from './components/Hero/Hero.jsx'
 import Skills from './components/Skills/Skills.jsx'
 import Services from './components/Services/Services.jsx'
 import PortfolioSlider from './components/Portfolio/PortfolioSlider.jsx'
-import Contact from './components/Contact/Contact.jsx'
+import Contact from './components/Contact/Contact.jsx';
 
 function App() {
   return (
