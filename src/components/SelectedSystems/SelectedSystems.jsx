@@ -42,10 +42,10 @@ function SelectedSystems() {
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
           Selected Systems
         </p>
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
           Systems that show how I think.
         </h2>
-        <p className="max-w-2xl text-base text-slate-300">
+        <p className="max-w-2xl text-base text-slate-600 dark:text-slate-300">
           Click each card to see the architecture choices, decisions, and trade-offs that make these systems senior-level.
         </p>
       </div>

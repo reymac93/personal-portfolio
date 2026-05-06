@@ -23,7 +23,7 @@ function Proof() {
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
           Credibility
         </p>
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
           Proof that systems work in production.
         </h2>
       </div>

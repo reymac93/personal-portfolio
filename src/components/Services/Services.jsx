@@ -1,101 +1,111 @@
 import { useLanguage } from '../../hooks/useLanguage.js'
-import { FaCode, FaServer, FaCogs, FaBrain } from 'react-icons/fa'
+import { FaCode, FaServer, FaCogs, FaBrain, FaRocket, FaShieldAlt } from 'react-icons/fa'
 
 function Services() {
   const { t } = useLanguage()
 
-  const items = [
+  const services = [
     {
       id: 'design-performance',
       icon: FaCode,
       title: t('services_web_dev_title'),
       description: t('services_web_dev_desc'),
+      features: ['Responsive Design', 'Performance Optimization', 'Modern Frameworks']
     },
     {
       id: 'scalable-architecture',
       icon: FaServer,
       title: t('services_api_title'),
       description: t('services_api_desc'),
+      features: ['RESTful APIs', 'Microservices', 'Database Design']
     },
     {
       id: 'reliability',
       icon: FaCogs,
       title: t('services_devops_title'),
       description: t('services_devops_desc'),
+      features: ['CI/CD Pipelines', 'Containerization', 'Monitoring']
     },
     {
       id: 'ml-production',
       icon: FaBrain,
       title: t('services_ai_ml_title'),
       description: t('services_ai_ml_desc'),
+      features: ['Model Deployment', 'Data Pipelines', 'MLOps']
     },
   ]
 
   return (
-    <div className="space-y-10">
-      <div>
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          {t('section_services_title')}
-        </h2>
-        <p className="mt-3 max-w-3xl text-base text-slate-300">
-          {t('services_subtitle')}
-        </p>
-      </div>
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-950">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            {t('section_services_title')}
+          </h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            {t('services_subtitle')}
+          </p>
+        </div>
 
-      <div className="grid gap-6 xl:grid-cols-[1.1fr_minmax(320px,420px)]">
-        <div className="grid gap-6 sm:grid-cols-2">
-            {items.map((item) => {
-              const Icon = item.icon
-              return (
-                <article
-                  key={item.id}
-                  className="rounded-3xl border border-slate-700 bg-slate-900/80 p-6 shadow-xl shadow-slate-950/10 transition hover:border-sky-500/60 hover:bg-slate-800"
-                >
-                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-800 text-sky-400">
-                    <Icon className="h-6 w-6" aria-hidden="true" />
+        <div className="grid gap-8 md:grid-cols-2">
+          {services.map((service) => {
+            const Icon = service.icon
+            return (
+              <div
+                key={service.id}
+                className="bg-white dark:bg-slate-900 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-slate-800 group"
+              >
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="p-3 bg-blue-100 dark:bg-blue-900 rounded-lg group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors duration-300">
+                    <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-300">{item.description}</p>
-                </article>
-              )
-            })}
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  {service.features.map((feature, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                      <span>{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )
+          })}
         </div>
 
-        <div className="rounded-3xl border border-slate-700 bg-slate-900/80 p-6 shadow-xl shadow-slate-950/10">
-          <div className="mb-6 flex items-center justify-between">
-            <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Architecture</p>
-              <h3 className="mt-2 text-xl font-semibold text-white">System flow overview</h3>
+        {/* Call to Action */}
+        <div className="mt-16 text-center">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <FaRocket className="w-8 h-8" />
+              <h3 className="text-2xl font-bold">Ready to Start Your Project?</h3>
             </div>
-            <span className="inline-flex h-3.5 w-3.5 rounded-full bg-sky-400" />
-          </div>
-
-          <div className="space-y-4 rounded-3xl border border-slate-800 bg-slate-950/90 p-5">
-            <div className="grid gap-4">
-              <div className="rounded-3xl bg-slate-900/80 p-4">
-                <p className="text-sm font-semibold text-white">API Layer</p>
-                <p className="mt-2 text-sm text-slate-400">Fast, cache-friendly endpoints designed for low latency.</p>
-              </div>
-              <div className="rounded-3xl bg-slate-900/80 p-4">
-                <p className="text-sm font-semibold text-white">Processing</p>
-                <p className="mt-2 text-sm text-slate-400">Worker queues and parallel pipelines for reliable background tasks.</p>
-              </div>
-              <div className="rounded-3xl bg-slate-900/80 p-4">
-                <p className="text-sm font-semibold text-white">ML / Analytics</p>
-                <p className="mt-2 text-sm text-slate-400">Stable model inference and event-driven data processing.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-6 rounded-3xl bg-slate-900/80 p-5 text-sm text-slate-300">
-            <p className="font-semibold text-white">Why this matters</p>
-            <p className="mt-3">
-              A clear architecture keeps systems easier to maintain, faster to iterate, and more resilient in production.
+            <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
+              Let's discuss how we can bring your ideas to life with modern technology and best practices.
             </p>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors duration-200"
+            >
+              <FaShieldAlt className="w-4 h-4" />
+              Get In Touch
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

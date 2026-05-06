@@ -11,65 +11,68 @@ import Contact from './components/Contact/Contact.jsx'
 
 function App() {
   return (
-    <div
-      className="relative min-h-screen text-white"
-      style={{
-        backgroundImage: 'url(/images/desk-background.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
-      <div className="pointer-events-none fixed inset-0 z-0 bg-slate-900/80" aria-hidden />
-      <div
-        className="pointer-events-none fixed inset-0 z-0 opacity-30"
-        style={{
-          backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)',
-          backgroundSize: '24px 24px',
-          maskImage: 'linear-gradient(to right, black 0%, transparent 60%)',
-          WebkitMaskImage: 'linear-gradient(to right, black 0%, transparent 60%)',
-        }}
-        aria-hidden
-      />
+    <div className="relative min-h-screen bg-white text-gray-900 dark:bg-[#1f1f1f] dark:text-[#999999] transition-colors duration-300">
+      {/* Background Pattern */}
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1f1f1f] via-[#252525] to-[#1f1f1f]" />
+        <div className="absolute inset-0 opacity-40 dark:opacity-30" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }} />
+      </div>
 
       <Header />
 
-      <main className="relative z-10 mx-auto flex max-w-6xl flex-col gap-16 px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pt-32">
-        <section id="hero" className="scroll-mt-24 rounded-3xl px-4 py-10 sm:px-8 sm:py-14">
+      <main className="relative z-10">
+        <section id="hero" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
           <Hero />
         </section>
 
-        <section id="projects" className="scroll-mt-24">
-          <FeaturedProjects />
+        <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <FeaturedProjects />
+          </div>
         </section>
 
-        <section id="skills" className="scroll-mt-24">
-          <Skills />
+        <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-950">
+          <div className="max-w-6xl mx-auto">
+            <Skills />
+          </div>
         </section>
 
-        <section id="build" className="scroll-mt-24">
-          <Services />
+        <section id="build" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-950">
+          <div className="max-w-6xl mx-auto">
+            <Services />
+          </div>
         </section>
 
-        <section id="systems" className="scroll-mt-24">
-          <SelectedSystems />
+        <section id="systems" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-950">
+          <div className="max-w-6xl mx-auto">
+            <SelectedSystems />
+          </div>
         </section>
 
-        <section id="more-projects" className="scroll-mt-24">
-          <MoreProjects />
+        <section id="more-projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-950">
+          <div className="max-w-6xl mx-auto">
+            <MoreProjects />
+          </div>
         </section>
 
-        <section id="proof" className="scroll-mt-24">
-          <Proof />
+        <section id="proof" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-950">
+          <div className="max-w-6xl mx-auto">
+            <Proof />
+          </div>
         </section>
 
-        <section id="final-cta" className="scroll-mt-24">
-          <FinalCTA />
+        <section id="final-cta" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-950">
+          <div className="max-w-6xl mx-auto">
+            <FinalCTA />
+          </div>
         </section>
 
-        <section id="contact" className="scroll-mt-24">
-          <Contact />
+        <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-950">
+          <div className="max-w-6xl mx-auto">
+            <Contact />
+          </div>
         </section>
       </main>
     </div>
