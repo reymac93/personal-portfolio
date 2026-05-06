@@ -1,5 +1,3 @@
-import { FaArrowRight, FaGithub } from 'react-icons/fa'
-
 const featuredProjects = [
   {
     id: 1,
@@ -124,23 +122,6 @@ function FeaturedProjects() {
                     ))}
                   </ul>
                 </div>
-              </div>
-
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href={project.caseStudyLink}
-                  className="inline-flex items-center gap-2 rounded-full bg-sky-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-400"
-                >
-                  View Case Study
-                  <FaArrowRight className="h-4 w-4" aria-hidden="true" />
-                </a>
-                <a
-                  href={project.githubLink}
-                  className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-800 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-sky-500 hover:text-white"
-                >
-                  <FaGithub className="h-4 w-4" aria-hidden="true" />
-                  GitHub
-                </a>
               </div>
 
               <div className="rounded-3xl bg-slate-950/80 px-5 py-4 text-sm text-slate-300 ring-1 ring-slate-700">
